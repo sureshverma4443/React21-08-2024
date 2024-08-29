@@ -1,0 +1,14 @@
+form{
+    grid-area: main;
+    border: 1px solid rgba(88, 191, 57, 0.226);
+    width:50%;
+    height: 97rex;
+    margin: auto; 
+   
+}
+form h1{
+    background-color: rgb(168, 216, 120);
+    height: 10rex;
+    margin:auto;
+    text-align: center;
+}
