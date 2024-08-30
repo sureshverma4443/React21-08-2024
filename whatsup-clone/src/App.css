@@ -1,0 +1,7 @@
+.whatupContianer{
+  display: grid;
+  grid-template-rows:400px auto;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
