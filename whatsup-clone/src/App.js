@@ -9,7 +9,8 @@ import MainContent from './whatsupcommponents/MainContent/MainContent'
 
 function App() {
   return (
-    <div className="whatupContianer">
+    <div className="whatsupContianer">
+      
       <Sidemenubar/>
       <MainContent/>
     </div>

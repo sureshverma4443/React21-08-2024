@@ -1,7 +1,10 @@
-.whatupContianer{
-  display: grid;
-  grid-template-rows:400px auto;
-  background-color: aqua;
+.whatsupContianer{
   border: 1px solid black;
-}
+  display: grid;  
+  width: 90%;
+  height: 860px;
+  margin:1% auto;
+  grid-template-columns: 550px auto;   
+  grid-template-areas:"sidemenubar MainContent";
 
+}

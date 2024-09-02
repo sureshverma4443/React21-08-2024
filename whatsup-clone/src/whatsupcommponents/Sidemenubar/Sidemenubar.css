@@ -1,0 +1,112 @@
+.sidemenubar{
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-areas:"profile chat";
+    border: 1px solid black;
+    
+}
+.profile{
+    grid-area:profile;
+    background-color: rgb(240,242,245);
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows: 400px 450px ;
+    grid-template-areas:"profileupicons"
+                         "profiledownicons";
+    
+
+}
+.chat{
+    grid-area: chat;
+    border: 1px solid black;
+}
+.profileupicons{
+ align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin: 10px auto;
+    gap: 5%;
+    font-size: 30px;
+
+}
+.profiledownicons{
+    background-color: beige;
+}
+
+.chatnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+}
+.chatnav div{
+    display: flex;
+     gap:20px;
+     font-size: 20px;
+}
+.searchsection{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    border-radius:20px;
+    gap:20px;
+    background-color: rgb(240,242,245);
+    height: 40px;
+    font-size: 20px;
+   
+}
+.searchsection input{
+    width: 85%;
+    height:30px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(240,242,245)
+}
+.all_Unread_Groups_Button{
+    display: flex;
+    margin: auto;
+    height: 30px;
+    padding: 10px;
+    gap:10px;
+   
+}
+.all_Unread_Groups_Button button{
+ border-radius: 15px;
+ border: none;
+ font-size: 18px;
+ 
+}
+.all_Unread_Groups_Button button:hover{
+    background-color:rgb(231,252,227) ;
+    cursor: pointer;
+    
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+.contacts img{
+    width: 12%;
+    height: 55px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.contacts div{
+    line-height: 5px;
+}
+.contacts span{
+    font-size: 15px;
+  margin-left: 160px;
+}
+.contacts:hover{
+    background-color: rgb(240,242,245) ;
+}
+
+
+
+
+
