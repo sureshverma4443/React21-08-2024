@@ -8,7 +8,6 @@ let formdata = {
    
                 id:"studentName",
                 label:"studentName",
-                type:"text",
                 type:"input",
                 placeholder: "Enter your Name",
                 subtype:"text",
@@ -18,7 +17,6 @@ let formdata = {
 {
   id:"fatherName",
   label:"fatherName",
-  type:"text",
   type:"input",
   placeholder: "Enter your fathername",
   subtype:"text",
@@ -29,7 +27,6 @@ let formdata = {
 {
     id:"mobile",
     label:"Mobile",
-    type:"text",
     type:"input",
     placeholder: "Enter your Mobile",
     subtype:"text",
@@ -40,7 +37,6 @@ let formdata = {
 {
   id:"email",
   label:"Email",
-  type:"text",
   type:"input",
   placeholder: "Enter your Mobile",
   subtype:"text",
@@ -50,7 +46,6 @@ let formdata = {
 {
   id:"age",
   label:"Age",
-  type:"text",
   type:"input",
   placeholder: "Enter your age",
   subtype:"text",
@@ -103,7 +98,6 @@ let formdata = {
   id:"regionl",
   label:"Regionl",
   type:"text",
-  type:"input",
   placeholder: "Enter your Mobile",
   subtype:"text",
   name:"regionl"

@@ -1,0 +1,25 @@
+.table_container_table table{
+  margin: auto;
+}
+.table_container_table table thead{
+  margin: auto;
+  background-color: cadetblue;
+}
+
+.table_container_table table thead tr {
+  border: 1px solid black;
+  
+}
+
+
+.table_container_table table thead tr th{
+  border: 1px solid black;
+  width: 10%;
+  height:10px;
+}
+
+
+.table_container_table table tbody tr td{
+  border: 1px solid black;
+  width: 10%;
+}
