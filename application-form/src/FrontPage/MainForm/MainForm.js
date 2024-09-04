@@ -58,13 +58,45 @@ let formdata = {
 
 },
 {
+  id:"city",
+  label:"City",
+  type:"select",
+  placeholder: "Enter your city",
+  name:"city",
+  option:[{label:"select",value:"city" },
+    {label:"Jaipur",value:"Jaipur"},
+    {label:"Jodhpur",value:"Jodhpur"},
+    {label:"Ajmer",value:"Ajmer"},
+    {label:"Kota",value:"Kota"},
+  ]
+},
+{
   id:"gender",
   label:"Gender",
-  type:"text",
-  type:"input",
+  type:"radio",
   placeholder: "Enter your gender",
-  subtype:"text",
-  name:"gender"
+  subtype:"radio",
+  name:"gender",
+  option:[{
+    id:"male",
+    label:"Male",
+    name:"male",
+    value:"male"
+    },
+    { 
+      id:"female",
+      label:"Female",
+      name:"female",
+      value:"female"
+      },
+      { 
+        id:"Transgender",
+        label:"Transgender",
+        name:"Transgender",
+        value:"Transgender"
+        },     
+
+  ]
 
 },
 {
@@ -77,6 +109,27 @@ let formdata = {
   name:"regionl"
 
 },
+{
+  id:"skills",
+  label:"Skills",
+  type:"checkbox",
+  name:"skills",
+  skills:[
+    {
+      label:"Java",
+      value:"java",
+    },
+    {
+      label:"html",
+      value:"html",
+    },
+    {
+      label:"css",
+      value:"css`",
+    },
+  ]
+
+},
 ]
 }
 
@@ -86,11 +139,22 @@ function MainForm () {
 
   const _handleChange = (e) => {
     const { name, value } = e.target;
+    let val=value;
+    if (name === "skills") {
+      val = formObj?.skills??[];
+      let isExists =  val?.some(abc=>abc===value);
+      if (isExists) {
+        val = val.filter(abc=>abc!==value);
+        } 
+        else {
+          val.push(value);
+        }
+
     setFormObj((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: val,
     }));
-  };
+  }};
 
 console.log(formObj)
 
@@ -111,7 +175,7 @@ console.log(formObj)
   return(
         <center>
       <h1>{formdata.header}</h1>
-      <FormField  fieldArr={formdata.StudentDetails} onChange={_handleChange} formObj={formObj}/> 
+      <FormField  fieldArr={formdata.StudentDetails} onChangecb={_handleChange} formObj={formObj}/> 
 
       <div className="btn_container">
         <button className="Submit_btn" onClick={_submitData}>Submit</button>
@@ -140,11 +204,8 @@ console.log(formObj)
         </tr>
          )
         })} 
- 
    </table>
 </div>
-
-
 
 
 
