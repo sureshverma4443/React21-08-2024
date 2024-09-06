@@ -1,11 +1,8 @@
 const GridTable=()=>{
     return(
-      <>
-      
-      
-      
-      
-      </>
+    <div classname="">
+
+    </div>
     )
 }
 
