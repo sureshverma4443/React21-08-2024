@@ -10,6 +10,7 @@ const App=()=> {
     <div className="main_containcer">
       <Navbar/>      
       <Sidebar/>
+      
       <Main/>
       <Footer/>
 
