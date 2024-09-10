@@ -1,20 +1,12 @@
 .main{
-   
-
-
-
-   
-  
-}
-.maincontent{
-    width:75%;
-    height: 803px;
-    grid-area: maincontent;
-    border: 1px solid black;
+     display: grid;
+     grid-template-columns:auto 300px;
+     grid-template-rows: auto;
+     grid-template-areas: "maincontent mainright";
     
 }
-.maincontentright {
-    grid-area: maincontentright;
-    // border:1px solid black;
-}
+
+
+
+
 

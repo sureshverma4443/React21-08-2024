@@ -1,0 +1,106 @@
+.main-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+    & .main-detail-post {
+      // display: flex;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    & .post-head {
+      align-items: flex-start;
+      display: flex;
+      margin: 10px;
+    }
+    & .userimg {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 12px;
+      object-fit: cover;
+    }
+    & .main-detail-post-info {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+    }
+    & .user-head {
+      display: block;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .main-detail-post-info p {
+      margin: 8px 0 0 0;
+      font-size: 16px;
+      line-height: 1;
+    }
+    & .p_tag {
+      font-size: 11px;
+      color: #8f8c8c;
+      margin: 0;
+    }
+    & .p_tag1 {
+      font-size: 16px;
+      color: #666;
+      margin: 10px;
+      line-height: 1.3;
+    }
+    & .more-icon {
+      margin: 0 20px 0 0;
+      color: gray;
+      font-size: 30px;
+      /* font-weight: bold; */
+    }
+    & .post-img span {
+      font-weight: 400;
+    }
+    & .post-img img {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 1px;
+      object-fit: cover;
+    }
+    & .like-post {
+      display: flex;
+      justify-content: space-around;
+      color: gray;
+      margin: 5px;
+      // margin: 20px;
+      font-size: 22px;
+    }
+    & .like-span {
+      font-size: 20px;
+      margin-top: -5px;
+    }
+  }
+  
+  .like-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .like-post p {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 21px;
+    color: #555;
+    cursor: pointer;
+  }
+  .like-post p:hover {
+    color: blue;
+  }
+  .like-post p .like-span {
+    font-size: 17px;
+    margin-bottom: -2px;
+  }
