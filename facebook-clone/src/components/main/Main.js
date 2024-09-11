@@ -10,21 +10,11 @@ import Mainpost from './mainpost/Mainpost'
 
 const Main =()=>{
     return(    
+        
     <div className='main'>       
-       <div> <Maincontent />
+         <Maincontent />
            <Midsection/>
            <Mainpost/>
-           
-           </div>
-           
-       <div><Mainright/> 
-       
-       </div>
-        
-        
-
-
-
     </div>
     )
      

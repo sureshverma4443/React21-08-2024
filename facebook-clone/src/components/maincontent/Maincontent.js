@@ -57,7 +57,8 @@ const Maincontent=()=>{
                 return(
                     <div className='maincontentitems' key={el.id}>
                       <p>{el.name}</p><img src={el.image}/>
-                       <video autoPlay muted ><source src={el.story} type="video/mp4"/></video>
+                       <video autoPlay muted ><source src={el.story} type="video/mp4"/>
+                       </video>
                     </div>
                 )
             })}

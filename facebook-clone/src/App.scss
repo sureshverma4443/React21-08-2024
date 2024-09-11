@@ -6,7 +6,7 @@
   grid-template-rows:60px auto 60px;
   grid-template-columns: 600px auto 300px;
   grid-template-areas:"navbar navbar navbar"
-                      "sidebar main main"
+                      "sidebar main mainright"
                       "footer footer footer" ;
 }
 .navbar{
@@ -21,6 +21,10 @@
 .main{
   grid-area:main;
   
+}
+.mainright{
+  grid-area:mainright;
+  border: 1px solid black;
 }
 
 

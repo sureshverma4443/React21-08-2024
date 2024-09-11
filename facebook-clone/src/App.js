@@ -4,6 +4,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Main from './components/main/Main';
 import Footer from './components/main/Main';
 import './App.scss';
+import Mainright from './components/mainright/Mainright';
 
 const App=()=> {
   return (
@@ -11,6 +12,7 @@ const App=()=> {
       <Navbar/>      
       <Sidebar/>
       <Main/>
+      <Mainright/>
       <Footer/>
 
     </div>

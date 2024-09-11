@@ -14,8 +14,8 @@ const mainContain=[
         time:"1 hrs",
         icon:<FaUserFriends />,
         postType:"image",
-        line:"Wildlife story of Tiger",
-        post:"https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg",
+        line:"Wildlife story of Elephant",
+        post:"https://media.istockphoto.com/id/2167279328/photo/elephants-combat-training.jpg?s=2048x2048&w=is&k=20&c=GPWJOfLpES5U3HQ_7e0cmDlkQs2bxWuu_nOxHuaWeI0=",
         like:<AiOutlineLike />,
         comment:<FaRegComment />,
         sent:<FaWhatsapp />,
@@ -29,7 +29,7 @@ const mainContain=[
         icon:<FaUserFriends />,
         postType:"video",
         line:"Beautiful Nature",
-        post:"https://media.istockphoto.com/id/1499384294/video/underwater-footage-of-dolphins-swimming-in-the-ocean.mp4?s=mp4-640x640-is&k=20&c=PeUlPeSTqSPWr3gKjkb7oWwnk9h6099PncQPM2mDy8E=",
+        post:"https://as2.ftcdn.net/v2/jpg/08/71/19/23/1000_F_871192369_gmqNMi0lCyayFffUjKKYtTQr6LmlgQJE.jpg",
         like:<AiOutlineLike />,
         comment:<FaRegComment />,
         sent:<FaWhatsapp />,
@@ -43,7 +43,7 @@ const mainContain=[
         icon:<FaUserFriends />,
         postType:"video",
         line:"Birds flying in sky",
-        post:"https://media.istockphoto.com/id/1622714704/video/winter-migratory-birds.mp4?s=mp4-640x640-is&k=20&c=jrRDz10NlAB6QOIJp98rJ-J365htT_ouGewG2YRo9yk=",
+        post:"https://as2.ftcdn.net/v2/jpg/08/71/19/23/1000_F_871192369_gmqNMi0lCyayFffUjKKYtTQr6LmlgQJE.jpg",
         like:<AiOutlineLike />,
         comment:<FaRegComment />,
         sent:<FaWhatsapp />,
@@ -175,10 +175,12 @@ const Mainpost=()=>{
             </div></div>
             <div className="post-img">
                 <span>{el.line}</span> <br/>
-                <video width="653" height="" controls autoPlay muted loop>
+                <vid
+                
+                eo width="653" height="" controls autoPlay muted loop>
             <source src={el.post} type="video/mp4" />
             Your browser does not support HTML video.
-          </video>
+          </vid>
             </div>
             <div className="like-post">
                 <p>{el.like} <span className="like-span">Like</span> </p>
