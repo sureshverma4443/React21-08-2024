@@ -1,4 +1,60 @@
 .mainright{
     border: 1px solid black;
 
+    .request{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 30%;
+        
+    }
+    .requestname{
+        display:flex;
+        flex-direction:row;
+        line-height: 15%;
+        
+
+        img{
+            width: 20%;
+            height: 5rem;
+            border-radius: 50%;
+        }
+        
+    }
+    .requestbutton{
+        display: flex;
+        margin: auto;
+        gap: 10%;     
+        justify-content: center;
+        
+
+
+        .requestbuttonconfirm{
+            
+            background-color:rgb(10,102,255);
+            color: white;
+        }
+           
+    }
+    .Contactsbar{
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       gap :15%
+    }
+    .Contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8%;
+
+
+        img{
+            width: 15%;
+            height: 3rem;
+            border-radius: 50%;
+        }
+
+    }
+
 }
