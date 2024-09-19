@@ -1,0 +1,65 @@
+.LeftSideBar{
+    grid-area: LeftSideBar;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: end;
+    line-height: 80%;
+    padding: 2%;
+  
+    
+    
+
+    .twittermenu{        
+        margin:right;
+        padding: 1%;
+        width:40%;
+        display: flex;
+       flex-direction: row;
+       color: white;
+    //    border: 1px solid white;
+       align-items: end;
+       gap: 8%;
+       border-radius: 20px;
+       text-align: center;
+       
+
+    
+   
+    }
+    .twittermenu:hover{
+        cursor: pointer;
+        background-color:rgba(255, 255, 255, 0.299);
+        
+    }
+    .twitermenubutton {
+        border: none;
+        width: 40%;
+        height: 3rem;
+        border-radius: 50px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(29,155,240);
+       
+    }
+    .twitermenubutton button{
+        margin: auto;
+        width: 100%;
+        border-radius: 50px;
+        font-size: larger;
+        font-weight: bolder;
+        align-items: center;
+        text-align: center;
+        height: 3rem;
+        color: white;
+        background-color: rgb(29,155,240);
+    }
+
+
+
+
+}
+
+
