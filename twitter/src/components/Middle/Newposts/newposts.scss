@@ -1,0 +1,109 @@
+.newposts{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+
+    
+
+    .postnotificaton{
+       display: flex;
+       flex-direction: row;
+        border-top:1px solid rgba(255, 255, 255, 0.299); 
+        height:4rem;
+       
+  
+        
+    }
+    .postnotificaton p{
+        margin: auto;
+        color:rgb(29,155,240);
+        }
+
+
+.newpost{
+    grid-area:newpost;
+   display: flex;
+   flex-direction:row;
+   border-top:1px solid rgba(255, 255, 255, 0.299);  
+
+
+   .newpostimage{
+    width: 10%;
+    padding: 1%;
+    align-items: center;
+    text-align: center;
+   }
+
+   .newpostfeeds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8rem;
+    width: 100%;
+    padding: 2%;
+    gap: 40%;
+    
+    
+}
+.newpostfeedsinput{
+    background-color: black ;
+    border: 1px solid ;
+    gap: 10%;
+    border: none;
+
+
+}
+.newpostfeedsinput input{
+    background-color: black ;
+    width: 100%;
+    color: white;
+    border: none;
+    height: 2.5rem;
+}
+.newpostfeedsinput input:focus{
+    outline: none;
+}
+  .newpostfeedsiconspost{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .newpostfeedsicons{
+        width: 50%;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        color:rgb(29,155,240);
+    }
+ }
+
+  .newpostimage img{
+    width: 80%;
+    height: 3rem;
+    border-radius: 50%;
+
+    
+
+  }
+  .newpostfeedspostbutton{
+    width: 20%;
+    border-radius: 50px;
+    border: none;
+  }
+  .newpostfeedspostbutton button{
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color:rgb(29,155,240) ;
+  }
+  
+}
+
+}
+
+  

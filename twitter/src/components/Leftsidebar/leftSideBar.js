@@ -39,10 +39,7 @@ twiterprofile:[{
     icon:<MdOutlineVerified />,
     menu:<BsThreeDots />
 
-    
 }]
-
-
 }
 
 const LeftSideBar =()=>{
@@ -55,8 +52,6 @@ const LeftSideBar =()=>{
             <h5>{el.name}</h5>
                 </div>
             )
-            
-
         })
         }
         <div className='twitermenubutton'><button>Post</button></div>
@@ -65,16 +60,20 @@ const LeftSideBar =()=>{
         <div className='profile'>
             {twiter.twiterprofile.map(el=>{
                 return(
-                    <div key={el.id} >
-                       <img src={el.image}></img>
-                       <div>
-                        <h5>{el.name}</h5>
-                        <h3>{el.twitterid}</h3>
-                    </div>
-                    <div>
+                    <div key={el.id} className='profileitems' >
+                      <div className='item'>
+                      <img src={el.image}></img>
+                       <div  className='profileitemsname'>
+                        <div className='profilenamebluetik'>
+                        <h6>{el.name}</h6>
                         <h5>{el.icon}</h5>
-                        
+                        </div> 
+                        <div>
+                    <p>{el.twitterid}</p>                        
+                    </div>                      
                     </div>
+                    
+                    <div>{el.menu}</div></div> 
                     </div>
                     
 

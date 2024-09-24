@@ -1,0 +1,26 @@
+.navbuttons{
+    grid-area:navbuttons;
+    position:sticky;
+    
+    
+   
+    
+
+    button{
+        position:static;
+        width: 50%;
+        height: 64px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        
+    }
+    button:hover{
+        background-color:rgba(255, 255, 255, 0.299);
+        // text-decoration: underline;
+        border-bottom: 2px solid rgb(29,155,240);
+
+    }
+
+}

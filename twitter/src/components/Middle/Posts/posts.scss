@@ -1,0 +1,42 @@
+.posts{
+    grid-area: posts;
+    display: grid;
+    border: 1px solid white;
+    
+    
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    color: white;
+    // line-height: 10px;
+
+    .postimage img{
+        width: 100%;
+        height: 3rem;
+        border-radius: 50px;
+       
+    }
+    .postitem{
+        display: flex;
+        flex-direction: column;
+
+        .postitemnameid{
+            display: flex;
+            flex-direction: row;
+            
+        }
+    }
+    .postedimage{
+        overflow: hidden;
+        width: 40%;
+        height: 20rem;
+       
+    }
+    .postedimage{
+        width: 50%;
+        
+    }
+
+}
