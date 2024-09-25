@@ -1,5 +1,13 @@
 import './posts.scss'
 import { MdOutlineVerified } from "react-icons/md";
+import { BiMessageRounded } from "react-icons/bi";
+import { AiOutlineRetweet } from "react-icons/ai";
+import { CiHeart } from "react-icons/ci";
+import { CiViewBoard } from "react-icons/ci";
+import { CiBookmark } from "react-icons/ci";
+import { MdOutlineFileUpload } from "react-icons/md";
+
+
 
 const post=[{
     id:1,
@@ -10,16 +18,16 @@ const post=[{
     twitterid:"@SachBedhadak",
     time:"5s",
     content:"#Jaipur: रसद विभाग की ओर से अवैध सिलेंडर पर कार्रवाई जारी विभाग ने आज एक ही दिन में 51 सिलेंडर किए जब्त, विभाग की ओर से चलाया जा रहा सघन अभियान...",
-    post:"https://pbs.twimg.com/media/GYOr9LiaMAABXfz?format=jpg&name=small"
+    post:"https://pbs.twimg.com/media/GYTMimpWoAEdsT5?format=jpg&name=medium"
     },{
         id:2,
-        image:"https://play-lh.googleusercontent.com/FRa7i9tPSRuSLqIvaasjGKjkqDSaH_PW72naiplcau3624gzUZIV8IziMRCggsj6sA",
+        image:"data:image/png;base64,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",
         name:"First India News",
         icon:<MdOutlineVerified />,
         twitterid:"1stIndiaNews",
         time:"1hs",
         content:"#Karauli #हिण्डौनसिटीः श्रीमहावीरजी पंचायत समिति में धरना दे प्रदर्शन कर रहे राजस्थान ग्राम विकास अधिकारी संघ के बैनर तले कल से चल रहा अनिश्चितकालीन धरना, ग्राम विकास अधिकारी से मारपीट ...@DmKarauli #SachBedhadak",
-        // post:"https://pbs.twimg.com/media/GYOr2I3XQAAmMYq?format=jpg&name=medium"
+         post:"https://pbs.twimg.com/media/GYOr9LiaMAABXfz?format=jpg&name=small"
 },
      {id:3,
     image:"https://pbs.twimg.com/profile_images/1663829042255241216/ipVRkUIc_400x400.jpg",
@@ -87,9 +95,17 @@ const Posts =()=>{
                     <div className='post' key={el.id}>
                         <div className='postimage'><img src={el.image}></img></div>
                     <div className='postitem'>
-                <div className='postitemnameid'><h5>{el.name}</h5>{el.icon}<p>{el.twitterid}.</p>{el.time}</div>
+                <div className='postitemnameid'><h5>{el.name}</h5><h6>{el.icon}</h6><p>{el.twitterid}.{el.time}</p></div>
                 <div>{el.content}</div>
-                <div postedimage><img src={el.post}></img></div>
+                <div className='postedimage'><img src={el.post}></img></div>
+                <div className='postcomment'>
+                <BiMessageRounded  /> 
+                <AiOutlineRetweet />
+                <CiHeart />
+                <CiViewBoard />
+                <CiBookmark />
+                <MdOutlineFileUpload /></div>
+
 
                     </div>             
                   </div>
