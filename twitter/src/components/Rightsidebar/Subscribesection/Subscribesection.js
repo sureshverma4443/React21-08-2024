@@ -3,7 +3,9 @@ import "./Subscribesection.scss"
 
 const Subscribesection =()=>{
     return(
-        <div className="Subscribesection"></div>
+        <div className="Subscribesection">
+            fghfthth
+        </div>
         );
 
 }

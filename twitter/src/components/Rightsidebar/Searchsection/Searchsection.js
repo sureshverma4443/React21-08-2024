@@ -1,8 +1,10 @@
- import "./Searchsection.scss"
+ import { CiSearch } from "react-icons/ci"
+import "./Searchsection.scss"
 
  const Searchsection =()=>{
     return(
-        <div className="input-group mb-3">
+        <div className="Searchsection">
+             <span><CiSearch /></span>  <input placeholder="Search"></input>
 
         </div>
     )

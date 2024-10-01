@@ -7,7 +7,7 @@ import Trendingsection from './Trendingsection/Trendingsection'
 
 const RightSideBar=()=>{
     return(
-        <div className="Rightsidebar">
+        <div className='Rightsidebar'>
             <Searchsection/>
             <Subscribesection/>
             <Trendingsection/>

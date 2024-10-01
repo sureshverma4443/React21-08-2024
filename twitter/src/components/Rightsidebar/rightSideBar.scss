@@ -1,14 +1,17 @@
 .Rightsidebar{
-    grid-area: Rightsidebar;
-    // border: 1px solid rgb(220, 217, 212);
+        grid-area: Rightsidebar;
         border: .1px solid rgba(255, 255, 255, 0.299);
-        display: grid;
+        border: 1px solid white;
+        display:grid;
         grid-template-columns:auto;
-        grid-template-rows:4rem 12rem 15rem 15rem;
+        grid-template-rows:1px 5rem 10rem auto;
         grid-template-areas:"Searchsection "
-                    "Subscribesection  "
-                    "Trendingsection "
-                    "Followingsection ";
+                            "Subscribesection  "
+                           "Trendingsection "
+                            "Followingsection ";
+
+
+                            
         overflow: scroll;
         scrollbar-width: none;
     
