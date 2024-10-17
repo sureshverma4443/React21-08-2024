@@ -1,3 +1,67 @@
 .Followingsection{
     border: .1px solid rgba(255, 255, 255, 0.299);
+         margin: 2%;
+         padding: 2%;
+         width: 50%;
+         border-radius: 10PX;
+        grid-area:Followingsection ;
+        // border: .1px solid rgba(255, 255, 255, 0.299);
+        display: flex;
+        gap: 20PX;
+        flex-direction: column;
+       
+    
+        .Followingsectionitem{
+            grid-area:Followingsectionitem ;
+            width: 100%;           
+            color:  white;
+            border-radius: 10px;
+            display: flex;
+           justify-content: space-around;
+            align-items: center;
+
+            .Followingsectionitemimage img{
+                width: 50px;
+                height: 3rem;
+                border-radius: 50PX;
+              
+            }
+            
+            
+    
+    
+            
+        }
+        .Followingsectionitemtwitter_id{
+          display: flex;
+          flex-direction: column;
+
+
+
+          
+
+         
+
+        }
+        .Followingsectionitemtwitter_id h6,p{
+            margin:0px;
+
+
+            
+            
+          }
+          .Followingsectionitemtwitter_id p{
+            color: rgb(101, 98, 94);
+        }
+        .Followingsectionitembtn button{
+            border-radius: 10px;
+            width: 120%;
+
+        }
+        .Followseebtn{
+            background-color:black;
+            color:rgb(29,155,240);
+
+        }
+    
 }

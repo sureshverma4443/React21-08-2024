@@ -7,19 +7,26 @@
     align-items: end;
     line-height: 80%;
     padding: 2%;
+
+   
+
+ 
   
     
     
 
-    .twittermenu{        
-        margin:right;
+    .btn-container{   
+        text-decoration:none;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;     
+        margin:left;
         padding: 1%;
         width:40%;
         display: flex;
-       flex-direction: row;
+       flex-direction: column;
        color: white;
     //    border: 1px solid white;
-       align-items: end;
        gap: 8%;
        border-radius: 20px;
        text-align: center;    
@@ -95,6 +102,31 @@
 
 
 
+
+}
+.containerclass{
+    display: flex;
+    flex-direction: row;
+}
+.btn-container div{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    color: white;
+    text-decoration: none;
+    margin: 5%;
+}
+.linkClass{
+    text-decoration: none;
+    gap: 2%;
+
+  
+    
+}
+.btn-container {
+   
+    
+    
 
 }
 

@@ -11,6 +11,7 @@ import { CgProfile } from "react-icons/cg";
 import { CgMoreO } from "react-icons/cg";
 import { MdOutlineVerified } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
+import LinkList from '../linklist/LinkList';
 
 
 
@@ -18,17 +19,17 @@ import { BsThreeDots } from "react-icons/bs";
 const twiter={
 Twittermenu:[
     {id:1,  icon:<BsTwitterX/>},
-    {id:2,name:'Home',   icon:<BsHouseFill/>},
-    {id:3,name:'Explore', icon:<RiSearchLine/>},
-    {id:4,name:'Notifications', icon:<IoNotificationsOutline/>},
-    {id:5,name:'Messages', icon:<FaEnvelopeSquare />},
-    {id:6,name:'Grok', icon:<BsSlashSquare />},    
-    {id:7,name:'Bookmarks', icon:<HiOutlineBookmark />},
-    {id:8,name:'Communities', icon:<RiGroupLine />},
-    {id:9,name:'Premium', icon:<BsTwitterX/>},
-    {id:10,name:'Verified Orgs', icon:<GoVerified />},
-    {id:11,name:'Profile', icon:<CgProfile />},
-    {id:12,name:'More', icon:<CgMoreO />},  
+    {id:2,path:"/Foryou",name:'Home',   icon:<BsHouseFill/>},
+    {id:3,path:"/explore",name:'Explore', icon:<RiSearchLine/>},
+    {id:4,path:"/notification",name:'Notifications', icon:<IoNotificationsOutline/>},
+    {id:5,path:"/messages",name:'Messages', icon:<FaEnvelopeSquare />},
+    {id:6,path:"/grok",name:'Grok', icon:<BsSlashSquare />},    
+    {id:7,path:"/bookmark",name:'Bookmarks', icon:<HiOutlineBookmark />},
+    {id:8,path:"/communities",name:'Communities', icon:<RiGroupLine />},
+    {id:9,path:"/premium",name:'Premium', icon:<BsTwitterX/>},
+    {id:10,path:"/verified_org",name:'Verified Orgs', icon:<GoVerified />},
+    {id:11,path:"/profile",name:'Profile', icon:<CgProfile />},
+    {id:12,path:"/more",name:'More', icon:<CgMoreO />},  
 
 ],
 twiterprofile:[{
@@ -45,15 +46,8 @@ twiterprofile:[{
 const LeftSideBar =()=>{
     return (
         <div className='LeftSideBar'>
-        {twiter.Twittermenu.map(el=>{
-            return(
-             <div key={el.id} className='twittermenu'>
-            <h5>{el.icon}</h5>
-            <h5>{el.name}</h5>
-                </div>
-            )
-        })
-        }
+            <LinkList linkArr={twiter.Twittermenu}  containerclass={"btn-container"}  linkClass="button"/>
+        
         <div className='twitermenubutton'><button>Post</button></div>
 
 

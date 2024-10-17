@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 import './navButtons.scss'
 
 
 const Navbuttons =()=>{
     return(
         <div className="navbuttons">
-        <button>For you</button>
-        <button>Following</button>        
+        <Link to="../../Foryou" ><button>For you</button></Link>
+        <Link to="../../Following"><button>Following</button></Link>               
         </div>
         
     )
