@@ -12,6 +12,7 @@ import { CgMoreO } from "react-icons/cg";
 import { MdOutlineVerified } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import LinkList from '../linklist/LinkList';
+import { useLocation, useParams } from 'react-router-dom';
 
 
 
@@ -27,7 +28,7 @@ Twittermenu:[
     {id:7,path:"/bookmark",name:'Bookmarks', icon:<HiOutlineBookmark />},
     {id:8,path:"/communities",name:'Communities', icon:<RiGroupLine />},
     {id:9,path:"/premium",name:'Premium', icon:<BsTwitterX/>},
-    {id:10,path:"/verified_org",name:'Verified Orgs', icon:<GoVerified />},
+    {id:10,path:"/verified",name:'VerifiedOrg', icon:<GoVerified />},
     {id:11,path:"/profile",name:'Profile', icon:<CgProfile />},
     {id:12,path:"/more",name:'More', icon:<CgMoreO />},  
 
@@ -44,6 +45,9 @@ twiterprofile:[{
 }
 
 const LeftSideBar =()=>{
+
+   
+
     return (
         <div className='LeftSideBar'>
             <LinkList linkArr={twiter.Twittermenu}  containerclass={"btn-container"}  linkClass="button"/>

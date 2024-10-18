@@ -18,7 +18,8 @@
     .btn-container{   
         text-decoration:none;
         display: flex;
-        flex-direction: column;
+       
+        justify-content: center;
         gap: 2%;     
         margin:left;
         padding: 1%;
@@ -111,23 +112,33 @@
 .btn-container div{
     display: flex;
     flex-direction: row;
+    text-align: center;
+    align-items: center;
     gap: 2%;
     color: white;
     text-decoration: none;
     margin: 5%;
+
+    
+}
+.btn-container div p{
+    font-size: 1.3rem;
+
 }
 .linkClass{
     text-decoration: none;
     gap: 2%;
+    
+
+
+    .active{
+        background-color: blue;
+    }
+    
 
   
     
 }
-.btn-container {
-   
-    
-    
 
-}
 
 

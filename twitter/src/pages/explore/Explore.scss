@@ -10,3 +10,11 @@
     align-items: center;
 
 }
+
+.focused{
+    border-color:rgb(29,155,240) ;
+    background-color:#191919 ;
+    svg{
+        fill:rgb(29,155,240);
+    }
+}

@@ -7,6 +7,8 @@ import Sport from "./sport/Sport";
 import Entertainment from "./entertainment/Entertainment";
 import { LuSettings } from "react-icons/lu";
 import { RiSearchLine } from "react-icons/ri";
+import { useState } from "react";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 
 
@@ -15,17 +17,20 @@ import { RiSearchLine } from "react-icons/ri";
 
 
 const Explore = () => {
+  const [showBackBtn,setShowBackbtn]=(useState(false));
+
     return (
       <div class=" h-100">
-      <div class=" d-flex flex-row h-10 w-80 justify-content-around  p-1 ">     
-    <div class="input-group mb-2  w-75 rounded "  >
-    <div class="input-group-prepend ">
+      <div class=" d-flex flex-row h-10 w-80 justify-content-around  p-1 ">  
+      {showBackBtn&&<button className="input-group-prepend-backbtn" onClick={()=>{setShowBackbtn(false)}}><IoMdArrowRoundBack/></button>}   
+    <div class="input-group mb-2  w-75 rounded "  >      
+    <div className={`input-group-prepend ${showBackBtn? 'focused':''}`}>
       <span class=" border border-dark  input-group-text h-100 text-light bg-dark" id="basic-addon1"><h6 ><RiSearchLine /></h6></span>
     </div>
-    <input type="text" class=" border border-dark form-control h-100 w-90 text-light bg-dark" placeholder="Search " aria-label="Search" aria-describedby="basic-addon1"></input>
+    <input onClick={()=>{setShowBackbtn(true)}} type="text" class=" border border-dark form-control h-100 w-90 text-light bg-dark" placeholder="Search " aria-label="Search" aria-describedby="basic-addon1"></input>
     </div>
     
-      <div class=" h-25 text-dark "><h3 class="m-auto text-white"><LuSettings /></h3></div>
+      <div class=" h-25 text-dark "><h3 class="m-auto text-white">{!showBackBtn &&<LuSettings />}</h3></div>
   
   
       
